@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Stock_Control.infra.CrossCutting.IoC</RootNamespace>
+  </PropertyGroup>
+
+</Project>
