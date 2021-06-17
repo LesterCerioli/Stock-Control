@@ -8,5 +8,7 @@ namespace Stock_Control.Domain.Enums
 {
     public enum Kinds
     {
+        Jur = 1,
+        Fis = 2
     }
 }

@@ -9,10 +9,11 @@ namespace Stock_Control.Domain.Entities
 {
     public class ProductInput : Entity, IAggregateRoot
     {
-        private List<Product> _products;
+        private IList<Product> _products;
 
-        public ProductInput(string number, DateTime date, int amount)
+        public ProductInput(Guid id, string number, DateTime date, int amount)
         {
+            Id = id;
             Number = number;
             Date = date;
             Amount = amount;
