@@ -5,4 +5,13 @@
     <RootNamespace>Stock_Control.Domain</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="10.2.3" />
+    <PackageReference Include="NetDevPack" Version="5.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stock-Control.Domain.Core\Stock-Control.Domain.Core.csproj" />
+  </ItemGroup>
+
 </Project>
