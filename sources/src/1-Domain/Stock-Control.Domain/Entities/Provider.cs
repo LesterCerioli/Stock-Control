@@ -11,7 +11,7 @@ namespace Stock_Control.Domain.Entities
 {
     public class Provider : Entity, IAggregateRoot
     {
-        public Provider(Guid id, string fantasyName, string socialReason, string contactName, string phoneContact, Address address, Document document, bool actived)
+        public Provider(Guid id, string fantasyName, string socialReason, string contactName, string phoneContact, Address address, Document document, bool actived, Email email)
         {
             Id = id;
             FantasyName = fantasyName;
@@ -23,6 +23,7 @@ namespace Stock_Control.Domain.Entities
             Actived = actived;
             CreateDate = DateTimeOffset.Now;
             LastUpdateDate = DateTimeOffset.Now;
+            Email = email;
         }
 
         protected Provider() { }
@@ -35,6 +36,7 @@ namespace Stock_Control.Domain.Entities
         public bool Actived { get; private set; }
         public DateTimeOffset CreateDate { get; private set; }
         public DateTimeOffset LastUpdateDate { get; private set; }
+        public Email Email { get; private set; }
 
         public void Activate()
         {

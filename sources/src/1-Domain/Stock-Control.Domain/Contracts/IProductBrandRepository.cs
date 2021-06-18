@@ -10,5 +10,14 @@ namespace Stock_Control.Domain.Contracts
 {
     public interface IProductBrandRepository : IRepository<ProductBrand>
     {
+        Task<ProductBrand> GetById(Guid id);
+        Task<ProductBrand> GetByName(string name);
+        Task<ProductBrand> GetByCreateDate(DateTimeOffset createDate);
+        Task<ProductBrand> GetByLastUpdateDate(DateTimeOffset lastUpdatedate);
+        Task<IEnumerable<ProductBrand>> GetAll();
+
+        void Add(ProductBrand productBrand);
+        void Update(ProductBrand productBrand);
+        void Remove(ProductBrand productBrand);
     }
 }

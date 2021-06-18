@@ -10,5 +10,14 @@ namespace Stock_Control.Domain.Contracts
 {
     public interface IMeasurementUnitRepository : IRepository<MeasurementUnit>
     {
+        Task<MeasurementUnit> GetById(Guid id);
+        Task<MeasurementUnit> GetByCreateDate(DateTime createDate);
+        Task<MeasurementUnit> GetByLastUpdateDate(DateTime lastUpdateDate);
+        Task<MeasurementUnit> GetByName(string name);
+        Task<IEnumerable<MeasurementUnit>> GetAll();
+
+        void Add(MeasurementUnit measurementUnit);
+        void Update(MeasurementUnit measurementUnit);
+        void Remove(MeasurementUnit measurementUnit);
     }
 }
