@@ -15,7 +15,7 @@ namespace Stock_Control.Domain.Entities
         {
             Id = id;
             Number = number;
-            Date = date;
+            Date = DateTime.Now;
             Amount = amount;
             _products = new List<Product>();
         }
