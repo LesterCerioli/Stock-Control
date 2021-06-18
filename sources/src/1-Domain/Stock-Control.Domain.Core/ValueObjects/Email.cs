@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Stock_Control.Domain.Core.ValueObjects
 {
-    public class Email
+    public class Email 
     {
     }
 }
