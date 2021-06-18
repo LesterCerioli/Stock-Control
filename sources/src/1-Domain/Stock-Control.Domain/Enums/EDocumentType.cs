@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Stock_Control.Domain.Core.ValueObjects
+namespace Stock_Control.Domain.Enums
 {
-    public class Email 
+    public enum EDocumentType
     {
+        CPF = 1,
+        CNPJ = 2
     }
 }

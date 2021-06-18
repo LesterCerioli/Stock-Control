@@ -27,7 +27,6 @@ namespace Stock_Control.Domain.Entities
         public int Amount { get; private set; }
 
         
-
         public IReadOnlyCollection<Product> Products { get { return _products.ToArray(); } }
 
     }

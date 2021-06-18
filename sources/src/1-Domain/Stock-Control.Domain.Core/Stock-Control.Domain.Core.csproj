@@ -5,8 +5,4 @@
     <RootNamespace>Stock_Control.Domain.Core</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\5-Commons\Stock-Control.Commons\Stock-Control.Commons.csproj" />
-  </ItemGroup>
-
 </Project>

@@ -1,11 +1,11 @@
-﻿using Stock_Control.Commons.ValueObjects;
+﻿using Stock_Control.Domain.Core.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Stock_Control.Domain.Core.ValueObjects
+namespace Stock_Control.Domain.ValueObjects
 {
     public class Address : ValueObject
     {
@@ -19,7 +19,7 @@ namespace Stock_Control.Domain.Core.ValueObjects
             Country = country;
             ZipCode = zipCode;
 
-            
+
         }
 
         public string Street { get; private set; }

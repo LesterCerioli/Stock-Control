@@ -31,5 +31,6 @@ namespace Stock_Control.Domain.Entities
         public DateTime CreateDate { get; private set; }
         public DateTime LastUpdateDate { get; private set; }
         public IReadOnlyCollection<Product> Products { get { return _products.ToArray(); } }
+
     }
 }
